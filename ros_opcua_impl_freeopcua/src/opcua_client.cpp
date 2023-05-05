@@ -335,7 +335,7 @@ bool subscribe(ros_opcua_srvs::Subscribe::Request &req, ros_opcua_srvs::Subscrib
         std::string node_string = OpcUa::ToString(variable.GetId());
 
         ros::NodeHandle nodeHandle("~");
-        _callback_publishers[node_string] =  nodeHandle.advertise<ros_opcua_msgs::TypeValue>(req.callback_topic, 1);
+        _callback_publishers[node_string] =  nodeHandle.advertise<ros_opcua_msgs::TypeValue>(req.callback_topic, 1, true);
 
         _subscriptions[node_string] = _client.CreateSubscription(100, _sclt);
         _subscription_handles[node_string] =  _subscriptions[node_string]->SubscribeDataChange(variable);
