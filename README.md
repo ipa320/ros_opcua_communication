@@ -3,7 +3,7 @@
 Clone the repository with:
 
 ```
-git clone --recursive https://github.com/iirob/ros_opcua_communication.git
+git clone --recursive https://gitlab.cc-asp.fraunhofer.de/ipa325/drivers/sps/ros_opcua_communication.git
 ```
 
 
