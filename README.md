@@ -3,8 +3,10 @@
 Clone the repository with:
 
 ```
-git clone --recursive https://gitlab.cc-asp.fraunhofer.de/ipa325/drivers/sps/ros_opcua_communication.git
+git clone --recursive https://github.com/ipa320/ros_opcua_communication.git
 ```
+
+This fork enforces `UserName_Basic256Sha256_Token` for connection with an opcua-server on a PLC using [ros_opcua_impl_freeopcua](ros_opcua_impl_freeopcua/README.md). In the `examples` folder, you find instructions and a sample project how to setup a Siemens PLC properly for usage with this package. 
 
 
 ## Getting started
