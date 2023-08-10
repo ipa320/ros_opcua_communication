@@ -19,5 +19,6 @@
   <depend>ros_opcua_srvs</depend>
   <depend>roscpp</depend>
   <depend>rospy</depend>
+  <depend>libmbedtls-dev</depend>
 
   </package>
